@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% if title  %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Welcome to Flask</title>
+    {% endif %}
+</head>
+<body>
+<a href="{{url_for('index')}}">Home</a>
+<a href="{{url_for('login')}}">Login</a>
+<h1>My First Flask App</h1>
+
+{% block index_content %}
+{% endblock %}
+
+{% block login_content %}
+{% endblock%}
+</body>
+</html>
