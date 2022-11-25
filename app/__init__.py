@@ -13,6 +13,6 @@ app.app_context().push()
 
 from flask_login import LoginManager
 login = LoginManager(app)
-
+login.login_view = 'login' 
 from app import routes
 from app import models
