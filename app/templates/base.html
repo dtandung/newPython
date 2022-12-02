@@ -14,12 +14,17 @@
 {% else %}
 <a href="{{url_for('logout')}}">Logout</a>
 {% endif %}
+<a href="{{url_for('register')}}">Register</a>
+
 <h1>My First Flask App</h1>
 
 {% block index_content %}
 {% endblock %}
 
 {% block login_content %}
+{% endblock%}
+
+{% block register_content %}
 {% endblock%}
 </body>
 </html>

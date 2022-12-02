@@ -11,7 +11,11 @@
     </ul>
 {% endif %}
 {% endwith %}
-
+<p>Read user infomation from table</p>
+<p>Username: {{user.username}}</p>
+{% for post in posts %}
+        <li>{{post}}</li>
+    {% endfor %}
 
 
 {% endblock %}
