@@ -27,3 +27,9 @@ class Post(db.Model):
 
     def __repr__(self):
         return f"Post content is: {self.content}"
+
+class LoaiMon(db.Model):
+    maloai = db.Column(db.String(64), primary_key= True)
+    tenloai = db.Column(db.String(64))
+
+    
